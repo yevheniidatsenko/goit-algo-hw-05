@@ -37,7 +37,7 @@ This homework will help to solidify the understanding of search algorithms, thei
 | Article 2 | Existing     | 0.001074              | 0.007572                     | 0.010153             |
 | Article 2 | Non-Existing | 0.001051              | 0.007713                     | 0.010202             |
 
-### Analysis
+#### Analysis
 
 - **Boyer-Moore**:
 
@@ -56,6 +56,6 @@ This homework will help to solidify the understanding of search algorithms, thei
   - **Non-Existing Substrings**: Also the slowest, with 0.009625 seconds for Article 1 and 0.010202 seconds for Article 2.
   - **Conclusion**: Rabin-Karp is less efficient due to the overhead of hash calculations and possible collisions. While it can be advantageous for multiple pattern searches, it does not perform as well in single pattern searches compared to Boyer-Moore and KMP.
 
-### Conclusion
+#### Conclusion
 
 The **Boyer-Moore** algorithm consistently outperforms the others in both existing and non-existing substring searches, making it the best choice for large texts and longer patterns. The **Knuth-Morris-Pratt** algorithm offers consistent and reliable performance, while the **Rabin-Karp** algorithm, although useful in certain scenarios, is generally slower due to its hashing mechanism.
